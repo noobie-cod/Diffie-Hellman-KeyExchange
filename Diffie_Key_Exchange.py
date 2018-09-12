@@ -18,4 +18,4 @@ def generate_access_key():
 		return a_shared_key
 	else:
 		return False
-
+generate_access_key()

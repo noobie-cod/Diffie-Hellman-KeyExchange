@@ -46,5 +46,7 @@ def random_generator(seeds):
 			else:
 				temp = temp*(temp**(0.5))/((seeds-1)**2)
 		k[i] = int(temp)
-	print(Cipher.chiper("Hi there.",round(stat.mean(k))))
+	cyp = Cipher.chiper("Hi there.",round(stat.mean(k)))
+	dcyp = Cipher.dechiper(cyp,round(stat.mean(k)))
+	print(cyp,dcyp)
 

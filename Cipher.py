@@ -5,8 +5,8 @@ def chiper(txt,seed):
 		for letter in word:
 			k = k + str(chr(ord(letter) + seed))
 		k = k + str(" ")
-	print(k.strip())
 	return (k.strip())
+
 
 def dechiper(txt,seed):
 	txt = txt.split(" ")
@@ -15,7 +15,7 @@ def dechiper(txt,seed):
 		for letter in word:
 			k = k + str(chr(ord(letter) - seed))
 		k = k + str(" ")
-	return (k)
+	return (k.strip())
 
 
 
